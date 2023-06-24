@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <body>
+<form method= "POST" action='/speak'>
+    {% csrf_token %}
+    <div>
+        <br>
+        <p>
+            <h3>
+                Enter details
+            </h3>
+        </P>
+        <div>
+            <p>Speaker Id:</p>{{form.sp_id}}
+        </div>
+
+        <div>
+            <p>Speaker Name::</p>{{form.sp_name}}
+        </div>
+
+        <div>
+            <p>Speaker Email:</p>{{form.sp_email}}
+        </div>
+
+        <div>
+            <p>Speaker contact:</p>{{form.sp_contact}}
+        </div>
+
+        <div>
+            <br>
+            <button type='submit'>Submit</button> 
+        </div>
+    </div>
+
+</form>
+        </body>
+</html>
